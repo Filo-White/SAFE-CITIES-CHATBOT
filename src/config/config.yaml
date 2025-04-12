@@ -1,0 +1,66 @@
+# config/config.yaml
+
+# Document and template paths
+paths:
+  sva_framework: "./docs/sva_framework"
+  gorizia_event: "./docs/gorizia_event"
+  simulation_templates: "./templates/simulations"
+  embeddings: "./data/embeddings.json"  # For pre-computed embeddings
+
+# Model configuration
+models:
+  chat_model: "gpt-4o"  # Main model for chat generation
+  temperature: 0.7  # Default temperature for generation
+  max_tokens: 2000  # Default max tokens for response
+
+# Document retrieval settings
+retrieval:
+  top_k: 5  # Number of documents to retrieve
+  similarity_threshold: 0.7  # Minimum similarity threshold
+
+# Memory configuration
+memory:
+  max_messages: 50  # Maximum number of messages to keep in memory
+  save_path: "./data/conversations/"  # Where to save conversations
+
+# Simulation parameters
+simulation:
+  default_participants: 2000  # Default number of participants
+  default_severity: 3  # Default severity level (1-5)
+  available_scenarios:
+    - "terrorism"
+    - "violence"
+    - "weather"
+    - "medical_emergency"
+    - "generic"
+
+#api_keys:
+  #openai: ""  # Lascia vuoto per usare variabili d'ambiente o input utente
+  #api_key_file: "config/.api_keys"  # File per salvare le API key (opzionale)
+  #remember_key: false  # Se true, salva l'API key inserita per sessioni future
+
+# config/config.yaml (aggiungi questa sezione)
+
+# Event planning configuration
+event_planning:
+  default_location: "Any location"
+  default_event_type: "Any event"
+  default_attendance: 2000
+  locations:
+    - "Any location"
+    - "Piazza Transalpina/Trg Evrope"
+    - "Custom location"
+  event_types:
+    - "Any event"
+    - "Concert"
+    - "Cultural event"
+    - "Festival"
+    - "Public gathering"
+    - "Sports event"
+    - "Other"
+
+# UI settings
+ui:
+  title: "Safe Cities Chatbot"
+  icon: "🔒"
+  language: "en"  # Default language
