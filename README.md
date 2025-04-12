@@ -79,7 +79,7 @@ When you first start the application:
 ## Project Structure
 
 ```
-SAFE-CITIES-CHATBOT/
+src/
 ├── app.py                      # Streamlit application
 ├── assets/
 │   └── logo.png                # Logo image for the UI
@@ -106,8 +106,6 @@ SAFE-CITIES-CHATBOT/
 ├── data/                       # Data storage (created automatically)
 │   ├── embeddings.json         # Document embeddings (optional)
 │   └── conversations/          # Saved conversations
-├── requirements.txt            # Project dependencies
-└── README.md                   # This file
 ```
 
 ## Usage
